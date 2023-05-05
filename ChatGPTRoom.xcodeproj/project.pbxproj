@@ -11,6 +11,8 @@
 		AB09B3852A054E1F00950781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09B3842A054E1F00950781 /* ContentView.swift */; };
 		AB09B3872A054E2000950781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB09B3862A054E2000950781 /* Assets.xcassets */; };
 		AB09B38A2A054E2000950781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB09B3892A054E2000950781 /* Preview Assets.xcassets */; };
+		AB09B3922A054F9200950781 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = AB09B3912A054F9200950781 /* OpenAIKit */; };
+		AB09B3942A054FCB00950781 /* SecretConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09B3932A054FCB00950781 /* SecretConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		AB09B3842A054E1F00950781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB09B3862A054E2000950781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB09B3892A054E2000950781 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB09B3932A054FCB00950781 /* SecretConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB09B3922A054F9200950781 /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				AB09B3822A054E1F00950781 /* ChatGPTRoomApp.swift */,
 				AB09B3842A054E1F00950781 /* ContentView.swift */,
+				AB09B3932A054FCB00950781 /* SecretConstants.swift */,
 				AB09B3862A054E2000950781 /* Assets.xcassets */,
 				AB09B3882A054E2000950781 /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = ChatGPTRoom;
+			packageProductDependencies = (
+				AB09B3912A054F9200950781 /* OpenAIKit */,
+			);
 			productName = ChatGPTRoom;
 			productReference = AB09B37F2A054E1F00950781 /* ChatGPTRoom.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = AB09B3762A054E1F00950781;
+			packageReferences = (
+				AB09B3902A054F9200950781 /* XCRemoteSwiftPackageReference "openai-kit" */,
+			);
 			productRefGroup = AB09B3802A054E1F00950781 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB09B3942A054FCB00950781 /* SecretConstants.swift in Sources */,
 				AB09B3852A054E1F00950781 /* ContentView.swift in Sources */,
 				AB09B3832A054E1F00950781 /* ChatGPTRoomApp.swift in Sources */,
 			);
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB09B3902A054F9200950781 /* XCRemoteSwiftPackageReference "openai-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dylanshine/openai-kit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB09B3912A054F9200950781 /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB09B3902A054F9200950781 /* XCRemoteSwiftPackageReference "openai-kit" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB09B3772A054E1F00950781 /* Project object */;
 }
