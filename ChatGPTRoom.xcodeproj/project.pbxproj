@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AB09B3832A054E1F00950781 /* ChatGPTRoomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09B3822A054E1F00950781 /* ChatGPTRoomApp.swift */; };
-		AB09B3852A054E1F00950781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09B3842A054E1F00950781 /* ContentView.swift */; };
+		AB09B3852A054E1F00950781 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09B3842A054E1F00950781 /* ChatView.swift */; };
 		AB09B3872A054E2000950781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB09B3862A054E2000950781 /* Assets.xcassets */; };
 		AB09B38A2A054E2000950781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB09B3892A054E2000950781 /* Preview Assets.xcassets */; };
 		AB09B3922A054F9200950781 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = AB09B3912A054F9200950781 /* OpenAIKit */; };
 		AB09B3942A054FCB00950781 /* SecretConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09B3932A054FCB00950781 /* SecretConstants.swift */; };
+		AB09B3962A05518700950781 /* OpenAiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09B3952A05518700950781 /* OpenAiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB09B37F2A054E1F00950781 /* ChatGPTRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB09B3822A054E1F00950781 /* ChatGPTRoomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTRoomApp.swift; sourceTree = "<group>"; };
-		AB09B3842A054E1F00950781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB09B3842A054E1F00950781 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		AB09B3862A054E2000950781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB09B3892A054E2000950781 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB09B3932A054FCB00950781 /* SecretConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretConstants.swift; sourceTree = "<group>"; };
+		AB09B3952A05518700950781 /* OpenAiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				AB09B3822A054E1F00950781 /* ChatGPTRoomApp.swift */,
-				AB09B3842A054E1F00950781 /* ContentView.swift */,
+				AB09B3842A054E1F00950781 /* ChatView.swift */,
 				AB09B3932A054FCB00950781 /* SecretConstants.swift */,
+				AB09B3952A05518700950781 /* OpenAiService.swift */,
 				AB09B3862A054E2000950781 /* Assets.xcassets */,
 				AB09B3882A054E2000950781 /* Preview Content */,
 			);
@@ -149,7 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB09B3942A054FCB00950781 /* SecretConstants.swift in Sources */,
-				AB09B3852A054E1F00950781 /* ContentView.swift in Sources */,
+				AB09B3962A05518700950781 /* OpenAiService.swift in Sources */,
+				AB09B3852A054E1F00950781 /* ChatView.swift in Sources */,
 				AB09B3832A054E1F00950781 /* ChatGPTRoomApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

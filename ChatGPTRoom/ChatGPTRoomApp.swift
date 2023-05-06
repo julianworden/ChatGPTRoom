@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ChatGPTRoomApp: App {
+    @StateObject private var openAiController = OpenAiService()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChatView()
+                .environmentObject(openAiController)
         }
     }
 }
