@@ -28,6 +28,16 @@ struct ChatView: View {
                             proxy.scrollTo(messages.count - 1, anchor: .bottom)
                         }
                     }
+                    .onChange(of: openAiService.interactionDisabled) { interactionDisabled in
+                        if !interactionDisabled {
+                            Task {
+                                try? await Task.sleep(seconds: 0.5)
+                                withAnimation {
+                                    proxy.scrollTo(openAiService.messages.count - 1, anchor: .bottom)
+                                }
+                            }
+                        }
+                    }
 
                     HStack {
                         TextField(openAiService.textFieldPrompt, text: $messageText, axis: .vertical)
