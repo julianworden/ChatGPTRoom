@@ -3,7 +3,7 @@
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Created Files
-ChatGPTRoom/SecretConstants.swift
+ChatGPTRoom/Utilities/SecretConstants.swift
 
 ## User settings
 xcuserdata/
