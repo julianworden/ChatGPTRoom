@@ -14,6 +14,12 @@
 		AB09B3922A054F9200950781 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = AB09B3912A054F9200950781 /* OpenAIKit */; };
 		AB09B3942A054FCB00950781 /* SecretConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09B3932A054FCB00950781 /* SecretConstants.swift */; };
 		AB09B3962A05518700950781 /* OpenAiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09B3952A05518700950781 /* OpenAiService.swift */; };
+		AB73D3102A0AF60F004CF345 /* SwiftPlus in Frameworks */ = {isa = PBXBuildFile; productRef = AB73D30F2A0AF60F004CF345 /* SwiftPlus */; };
+		AB73D3132A0AF7CF004CF345 /* OpenAiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73D3122A0AF7CF004CF345 /* OpenAiError.swift */; };
+		AB73D3162A0AF8A0004CF345 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73D3152A0AF8A0004CF345 /* ViewState.swift */; };
+		AB73D3192A0AF8CD004CF345 /* ErrorMessageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73D3182A0AF8CD004CF345 /* ErrorMessageConstants.swift */; };
+		AB73D31B2A0AF9AC004CF345 /* ChatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73D31A2A0AF9AC004CF345 /* ChatBubbleView.swift */; };
+		AB73D31E2A0AFD68004CF345 /* Chat.Message+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73D31D2A0AFD68004CF345 /* Chat.Message+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,11 @@
 		AB09B3892A054E2000950781 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB09B3932A054FCB00950781 /* SecretConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretConstants.swift; sourceTree = "<group>"; };
 		AB09B3952A05518700950781 /* OpenAiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAiService.swift; sourceTree = "<group>"; };
+		AB73D3122A0AF7CF004CF345 /* OpenAiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAiError.swift; sourceTree = "<group>"; };
+		AB73D3152A0AF8A0004CF345 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		AB73D3182A0AF8CD004CF345 /* ErrorMessageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageConstants.swift; sourceTree = "<group>"; };
+		AB73D31A2A0AF9AC004CF345 /* ChatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleView.swift; sourceTree = "<group>"; };
+		AB73D31D2A0AFD68004CF345 /* Chat.Message+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chat.Message+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB73D3102A0AF60F004CF345 /* SwiftPlus in Frameworks */,
 				AB09B3922A054F9200950781 /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,9 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				AB09B3822A054E1F00950781 /* ChatGPTRoomApp.swift */,
-				AB09B3842A054E1F00950781 /* ChatView.swift */,
-				AB09B3932A054FCB00950781 /* SecretConstants.swift */,
-				AB09B3952A05518700950781 /* OpenAiService.swift */,
+				AB73D31C2A0AFD5E004CF345 /* Helpers */,
+				AB73D3142A0AF88F004CF345 /* Model */,
+				AB73D30B2A0AF5EA004CF345 /* Views */,
+				AB73D30D2A0AF5F3004CF345 /* Services */,
+				AB73D30C2A0AF5EE004CF345 /* Utilities */,
+				AB73D3112A0AF7C5004CF345 /* Error */,
 				AB09B3862A054E2000950781 /* Assets.xcassets */,
 				AB09B3882A054E2000950781 /* Preview Content */,
 			);
@@ -73,6 +88,56 @@
 				AB09B3892A054E2000950781 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB73D30B2A0AF5EA004CF345 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB09B3842A054E1F00950781 /* ChatView.swift */,
+				AB73D31A2A0AF9AC004CF345 /* ChatBubbleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB73D30C2A0AF5EE004CF345 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AB09B3932A054FCB00950781 /* SecretConstants.swift */,
+				AB73D3182A0AF8CD004CF345 /* ErrorMessageConstants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AB73D30D2A0AF5F3004CF345 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB09B3952A05518700950781 /* OpenAiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AB73D3112A0AF7C5004CF345 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				AB73D3122A0AF7CF004CF345 /* OpenAiError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		AB73D3142A0AF88F004CF345 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB73D3152A0AF8A0004CF345 /* ViewState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB73D31C2A0AFD5E004CF345 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AB73D31D2A0AFD68004CF345 /* Chat.Message+Helpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +158,7 @@
 			name = ChatGPTRoom;
 			packageProductDependencies = (
 				AB09B3912A054F9200950781 /* OpenAIKit */,
+				AB73D30F2A0AF60F004CF345 /* SwiftPlus */,
 			);
 			productName = ChatGPTRoom;
 			productReference = AB09B37F2A054E1F00950781 /* ChatGPTRoom.app */;
@@ -124,6 +190,7 @@
 			mainGroup = AB09B3762A054E1F00950781;
 			packageReferences = (
 				AB09B3902A054F9200950781 /* XCRemoteSwiftPackageReference "openai-kit" */,
+				AB73D30E2A0AF60F004CF345 /* XCRemoteSwiftPackageReference "SwiftPlus" */,
 			);
 			productRefGroup = AB09B3802A054E1F00950781 /* Products */;
 			projectDirPath = "";
@@ -153,8 +220,13 @@
 			files = (
 				AB09B3942A054FCB00950781 /* SecretConstants.swift in Sources */,
 				AB09B3962A05518700950781 /* OpenAiService.swift in Sources */,
+				AB73D3162A0AF8A0004CF345 /* ViewState.swift in Sources */,
+				AB73D31E2A0AFD68004CF345 /* Chat.Message+Helpers.swift in Sources */,
 				AB09B3852A054E1F00950781 /* ChatView.swift in Sources */,
 				AB09B3832A054E1F00950781 /* ChatGPTRoomApp.swift in Sources */,
+				AB73D3192A0AF8CD004CF345 /* ErrorMessageConstants.swift in Sources */,
+				AB73D31B2A0AF9AC004CF345 /* ChatBubbleView.swift in Sources */,
+				AB73D3132A0AF7CF004CF345 /* OpenAiError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +437,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		AB73D30E2A0AF60F004CF345 /* XCRemoteSwiftPackageReference "SwiftPlus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/julianworden/SwiftPlus.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -372,6 +452,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AB09B3902A054F9200950781 /* XCRemoteSwiftPackageReference "openai-kit" */;
 			productName = OpenAIKit;
+		};
+		AB73D30F2A0AF60F004CF345 /* SwiftPlus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB73D30E2A0AF60F004CF345 /* XCRemoteSwiftPackageReference "SwiftPlus" */;
+			productName = SwiftPlus;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
